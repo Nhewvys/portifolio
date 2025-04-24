@@ -1105,7 +1105,7 @@ body.dark-mode .form-group textarea {
         flex-direction: column;
     }
     .animate-float{
-        height: 350px;
+        height: 300px;
         object-fit: cover;
         background-position: 500vh;
     }

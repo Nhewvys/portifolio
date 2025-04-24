@@ -1,0 +1,175 @@
+/* Estilos para melhorar o desempenho */
+
+/* Otimização de fontes */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap; /* Melhora a performance de carregamento de fontes */
+    src: local('Poppins Regular'), local('Poppins-Regular');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Poppins Bold'), local('Poppins-Bold');
+}
+
+/* Otimização de imagens */
+.lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.lazy-load.loaded {
+    opacity: 1;
+}
+
+/* Otimização para dispositivos móveis */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2rem !important;
+    }
+    
+    .hero-text p {
+        font-size: 1rem !important;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .sobre-content {
+        gap: 2rem !important;
+    }
+    
+    .image-frame {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    
+    .contato-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .contato-icon {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Otimização para tablets */
+@media (max-width: 768px) and (min-width: 481px) {
+    .hero-blob {
+        width: 400px !important;
+        height: 400px !important;
+    }
+    
+    .projetos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important;
+    }
+}
+
+/* Otimização para impressão */
+@media print {
+    .preloader,
+    .header,
+    .hero-btns,
+    .hero-social,
+    .scroll-down,
+    .projetos-filter,
+    .projetos-more,
+    .depoimentos,
+    .contato-form,
+    .footer-newsletter,
+    .back-to-top {
+        display: none !important;
+    }
+    
+    .container {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        color: #000 !important;
+        background: #fff !important;
+    }
+    
+    a {
+        text-decoration: underline;
+        color: #000 !important;
+    }
+    
+    .section-padding {
+        padding: 1rem 0 !important;
+    }
+}
+
+/* Otimização de animações para usuários que preferem movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .animate-float,
+    .animate-text,
+    .animate-text-delay,
+    .scroll-down,
+    .animate-fade-in {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Melhorias de acessibilidade */
+:focus {
+    outline: 3px solid var(--primary-color) !important;
+    outline-offset: 2px !important;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Otimização para telas de alto contraste */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #0000ff;
+        --secondary-color: #000088;
+        --accent-color: #00ccff;
+        --text-color: #000000;
+        --text-light: #333333;
+        --bg-color: #ffffff;
+        --bg-light: #f0f0f0;
+    }
+    
+    .btn-primary {
+        background: var(--primary-color);
+        color: white;
+        border: 2px solid black;
+    }
+    
+    .btn-outline {
+        border: 2px solid black;
+        color: black;
+    }
+}

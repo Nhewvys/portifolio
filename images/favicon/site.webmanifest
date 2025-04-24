@@ -1,0 +1,20 @@
+{
+    "name": "Portfolio Desenvolvedor Web",
+    "short_name": "DevPortfolio",
+    "icons": [
+      {
+        "src": "/images/favicon/logo_192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/favicon/logo_512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#4361ee",
+    "background_color": "#ffffff",
+    "display": "standalone"
+  }
+  

@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Desenvolvedor Web",
+  "url": "https://seudominio.com",
+  "jobTitle": "Desenvolvedor Web Full Stack",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelancer"
+  },
+  "sameAs": [
+    "https://github.com/Nhewvys",
+    "https://linkedin.com/in/Nhewvys"
+  ],
+  "knowsAbout": [
+    "HTML",
+    "CSS",
+    "PHP",
+    "JavaScript",
+    "Node.js",
+    "Python",
+    "Arduino",
+    "C++"
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Desenvolvimento Web"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Desenvolvimento de Dashboards"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Bots de Atendimento WhatsApp"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Sistemas de Pagamento"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Automações com Arduino"
+      }
+    }
+  ]
+}
